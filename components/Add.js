@@ -44,7 +44,7 @@ export const Add = ({ setClose }) => {
           X
         </span>
         <h1 className="justify-center items-center text-lg ml-20">
-          Add new food
+          Add new product
         </h1>
         <div className="mb-2 flex-col flex">
           <label> Choose an Image</label>
@@ -70,14 +70,6 @@ export const Add = ({ setClose }) => {
             className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-black rounded"
           ></input>
         </div>
-        {/* <div className="mb-2 flex-col flex">
-          <label>Description</label>
-          <textarea
-            type={'text'}
-            onChange={(e) => setDes(e.target.value)}
-            className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-black rounded"
-          ></textarea>
-        </div> */}
         <div className="mb-2 flex-col flex">
           <label> Price</label>
           <input

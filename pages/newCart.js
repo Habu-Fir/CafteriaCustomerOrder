@@ -58,24 +58,24 @@ const CartPage = () => {
                 <Image src={item.img} height="90" width="65" />
               </div>
               <p>{item.product}</p>
-              <p>$ {item.price}</p>
+              <p>{item.price} Brr</p>
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
-                <button onClick={() => dispatch(incrementQuantity(item.id))}>
+                <button onClick={() => dispatch(incrementQuantity(item._id))}>
                   +
                 </button>
-                <button onClick={() => dispatch(decrementQuantity(item.id))}>
+                <button onClick={() => dispatch(decrementQuantity(item._id))}>
                   -
                 </button>
-                <button onClick={() => dispatch(removeFromCart(item.id))}>
+                <button onClick={() => dispatch(removeFromCart(item._id))}>
                   x
                 </button>
               </div>
-              <p>$ {item.quantity * item.price}</p>
+              <p>{item.quantity * item.price} Brr</p>
             </div>
           ))}
           <h2 className="uppercase italic font-bold pb-4">
-            Grand Total: $ {getTotalPrice()}
+            Grand Total: {getTotalPrice()} Brr
           </h2>
           <button
             href={'/OrderDetail'}

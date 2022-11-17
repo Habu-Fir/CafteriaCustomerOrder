@@ -43,6 +43,7 @@ const Header = () => {
             <a className="hover:text-darkGrayishBlue">Careers</a>
           </Link>
         </div>
+
         <button
           id="menu-btn"
           className={`${
@@ -54,21 +55,27 @@ const Header = () => {
           <span className="hamburger-middle"></span>
           <span className="hamburger-bottom"></span>
         </button>
-        <Link href={'/newCart'} className="cursor-pointer">
+        <Link href={'/newCart'}>
           <div className="hidden md:flex shrink w-13 sm:order-2 relative h-13 right-0 items-end">
             <Image
               src={'/img/cart.png'}
               alt="Cart"
               width={50}
               height={50}
-              className="h-full w-full"
+              className="h-full w-full cursor-pointer"
             />
-            <div className="absolute top-3 right-2 h-5 w-5  text-white font-bold rounded-full text-center bg-red-600">
+            <div className="absolute cursor-pointer top-3 right-2 h-5 w-5  text-white font-bold rounded-full text-center bg-red-600">
               {getItemCount()}
             </div>
           </div>
         </Link>
+        <div>
+          <a href="/admin" className=" cursor-pointer hover:text-indigo-300">
+            Admin
+          </a>
+        </div>
       </div>
+
       {display ? (
         <div className="md:hidden border rounded bg-blue-gray-50 shadow-lg">
           <div

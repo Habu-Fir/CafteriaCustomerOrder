@@ -12,13 +12,15 @@ const OrderDatail = ({ total, createOrder }) => {
     <div className="h-screen w-full absolute top-0 left-0 flex items-center justify-center bg-blue-gray-500 opacity-100">
       <div className="w-1/3  bg-white rounded-2xl  p-2 flex-col items-center justify-center ">
         <h1 className="font-bold text-red-900 mb-10">
-          You will Pay {total} birr after delivery
+          You will pay
+          <em className="text-blue-gray-900 underline"> {total} birr </em>
+          after delivery
         </h1>
         <div className="flex-col flex w-full mb-4">
-          <label className="mb-3 text-left">Name SureName </label>
+          <label className="mb-3 text-left">Name Surename </label>
           <input
             className="h-10 border border-solid border-gray-300"
-            placeholder="Haba"
+            placeholder="Ruel Assefa"
             type={'text'}
             onChange={(e) => setCustomer(e.target.value)}
           ></input>
@@ -27,7 +29,7 @@ const OrderDatail = ({ total, createOrder }) => {
           <label className="mb-3 text-left">Phone Number</label>
           <input
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="+251923..."
             className="mb-3 border border-solid border-gray-300"
           />
         </div>
@@ -35,7 +37,7 @@ const OrderDatail = ({ total, createOrder }) => {
           <label className="mb-3 text-left">Address</label>
           <textarea
             rows={5}
-            placeholder="Elton St. 505 NY"
+            placeholder="Gured Shola"
             type="text"
             className="mb-3 border border-solid border-gray-300"
             onChange={(e) => setAddress(e.target.value)}

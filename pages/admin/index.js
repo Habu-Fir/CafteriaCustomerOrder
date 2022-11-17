@@ -33,8 +33,8 @@ const Index = ({ orders, products }) => {
   };
 
   return (
-    <div class="overflow-x-auto relative shadow-md sm:rounded-lg flex space-x-4 pt-10">
-      <div className="flex-col">
+    <div class="overflow-x-auto relative shadow-md sm:rounded-lg flex space-x-2 pt-10">
+      <div className="flex-col px-3">
         <h1 className="text-center pb-5 font-bold text-pink-800 text-3xl">
           PRODUCTS
         </h1>
@@ -131,9 +131,14 @@ const Index = ({ orders, products }) => {
                 </th>
                 <td class="py-4 px-6">{order.customer}</td>
                 <td class="py-4 px-6">{order.total}</td>
-                <td>{statusArray[order.status]}</td>
+                <td className=" rounded text-black p-1">
+                  {statusArray[order.status]}
+                </td>
                 <td>
-                  <button onClick={() => handleStatus(order._id)}>
+                  <button
+                    onClick={() => handleStatus(order._id)}
+                    className="bg-light-blue-800 rounded text-white p-1"
+                  >
                     Next Stage
                   </button>
                 </td>

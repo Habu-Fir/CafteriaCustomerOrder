@@ -8,11 +8,11 @@ const CategoryPage = ({ product }) => {
   return (
     <>
       <Header />
-      <section className="container mx-auto md:px-20 py-10">
-        <h2 className="text-4xl py-12 font-bold text-center italic">
-          List of {router.query.category} that are super healthy !
+      <section className="container mx-auto md:px-10 py-10 pt-0">
+        <h2 className="text-3xl py-12 font-bold text-center italic">
+          what would you like drink?
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14  ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8  ">
           {product.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}

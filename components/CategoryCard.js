@@ -41,7 +41,7 @@ export default function CategoryCard({ image, name, des }) {
         <Typography variant="small" color="gray">
           <a
             href={`/category/${name}`}
-            className="hidden  md:block bg-yellow-700 hover:bg-brightRedLight p-1 mt-2  px-4 pt-1 self-baseline rounded text-white "
+            className="hidden cursor-pointer md:block bg-yellow-700 hover:bg-brightRedLight p-1 mt-2  px-4 pt-1 self-baseline rounded text-white "
           >
             ORDER NOW
           </a>

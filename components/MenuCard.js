@@ -23,7 +23,7 @@ export default function MenuCard({ sandwich }) {
         </Link>
       </CardHeader>
       <CardBody className="text-center">
-        <Typography variant="h6" className="mb-2">
+        <Typography variant="h6" className="mb-1">
           {sandwich.category}
         </Typography>
         <Typography>{sandwich.product}</Typography>
